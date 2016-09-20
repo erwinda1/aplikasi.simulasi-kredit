@@ -2,11 +2,15 @@ package com.hotmail.dimmaryanto.software.model.kredit;
 
 import java.util.ArrayList;
 import java.util.List;
+import org.springframework.format.annotation.NumberFormat;
 
 public class Kredit {
 
+    @NumberFormat(style = NumberFormat.Style.CURRENCY)
     private Double plafond;
+    @NumberFormat(style = NumberFormat.Style.PERCENT)
     private Double bunga;
+    @NumberFormat(style = NumberFormat.Style.NUMBER)
     private Integer jangka;
     private List<KreditDetail> simulasi = new ArrayList<>();
 
