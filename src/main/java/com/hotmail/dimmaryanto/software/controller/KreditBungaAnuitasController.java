@@ -1,13 +1,7 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.hotmail.dimmaryanto.software.controller;
 
-import com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga.BungaJenisAnuitas;
-import com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga.BungaJenisFlat;
 import com.hotmail.dimmaryanto.software.model.kredit.Kredit;
+import com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga.BungaJenisAnuitas;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
