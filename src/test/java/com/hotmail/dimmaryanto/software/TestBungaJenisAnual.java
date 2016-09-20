@@ -1,6 +1,6 @@
 package com.hotmail.dimmaryanto.software;
 
-import com.hotmail.dimmaryanto.software.model.BungaJenisAnuitas;
+import com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga.BungaJenisAnuitas;
 import java.text.NumberFormat;
 import junit.framework.TestCase;
 import org.junit.Ignore;
@@ -10,7 +10,7 @@ import org.junit.Test;
  * Unit test for simple App.
  */
 @Ignore
-public class AppTest extends TestCase {
+public class TestBungaJenisAnual extends TestCase {
 
     @Ignore
     @Test
@@ -45,7 +45,7 @@ public class AppTest extends TestCase {
         f = new BungaJenisAnuitas(2, 20000000.0, 18480643.0, 12, 0.2);
         NumberFormat nf = NumberFormat.getCurrencyInstance();
         System.out.println(nf.format(f.getBaki()));
-        
+
         assertEquals(16935964.0, f.getBaki());
 
     }

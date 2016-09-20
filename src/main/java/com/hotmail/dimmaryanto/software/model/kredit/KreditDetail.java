@@ -1,4 +1,4 @@
-package com.hotmail.dimmaryanto.software.model;
+package com.hotmail.dimmaryanto.software.model.kredit;
 
 import java.time.DayOfWeek;
 import java.time.LocalDate;

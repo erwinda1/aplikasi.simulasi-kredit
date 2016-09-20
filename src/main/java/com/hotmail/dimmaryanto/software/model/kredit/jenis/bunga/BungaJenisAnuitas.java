@@ -1,16 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package com.hotmail.dimmaryanto.software.model;
+package com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga;
 
+import com.hotmail.dimmaryanto.software.model.kredit.KreditDetail;
 import org.apache.poi.ss.formula.functions.Finance;
 
-/**
- *
- * @author bpr_ukabima
- */
 public class BungaJenisAnuitas extends KreditDetail {
 
     public BungaJenisAnuitas(Integer angsuranKe, Double plafond, Double lastBaki, Integer jangka, Double bunga) {
