@@ -1,7 +1,6 @@
 package com.hotmail.dimmaryanto.software;
 
 import com.hotmail.dimmaryanto.software.model.kredit.jenis.bunga.BungaJenisAnuitas;
-import java.text.NumberFormat;
 import junit.framework.TestCase;
 import org.junit.Test;
 
