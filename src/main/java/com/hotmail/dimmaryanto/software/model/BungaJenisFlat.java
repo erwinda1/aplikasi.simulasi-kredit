@@ -11,15 +11,12 @@ package com.hotmail.dimmaryanto.software.model;
  */
 public class BungaJenisFlat extends KreditDetail {
 
-    private final Double plafond;
-
     public BungaJenisFlat(Integer angsuranKe, Double plafond, Integer jangka, Double bunga) {
-        this.plafond = plafond;
         super.setAngsuranKe(angsuranKe);
         super.setJatuhTempo(angsuranKe);
         setAngsuranPokok(plafond, jangka);
         setAngsuranBunga(plafond, bunga);
-        setTotalAngsuran(getAngsuranPokok() + getAngsuranBunga());
+        setTotalAngsuran(getAngsuranPokok() - getAngsuranBunga());
         setBaki(plafond - (getAngsuranPokok() * getAngsuranKe()));
     }
 

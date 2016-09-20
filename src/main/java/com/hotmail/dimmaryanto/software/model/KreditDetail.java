@@ -5,12 +5,12 @@ import java.time.LocalDate;
 
 public class KreditDetail {
 
-    private Integer angsuranKe;
+    private Integer angsuranKe = 0;
     private LocalDate jatuhTempo;
-    private Double angsuranPokok;
-    private Double angsuranBunga;
-    private Double totalAngsuran;
-    private Double baki;
+    private Double angsuranPokok = 0.0;
+    private Double angsuranBunga = 0.0;
+    private Double totalAngsuran = 0.0;
+    private Double baki = 0.0;
 
     public void setJatuhTempo(LocalDate jatuhTempo) {
         this.jatuhTempo = jatuhTempo;
