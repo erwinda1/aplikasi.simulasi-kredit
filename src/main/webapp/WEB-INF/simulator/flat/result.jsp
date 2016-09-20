@@ -18,7 +18,7 @@
                 Bunga: ${simulatorFlat.bunga}
             </div>
             <div>
-                Jangka: ${simulatorFlat.jangka} Bulang
+                Jangka: ${simulatorFlat.jangka} / Bulan
             </div>
         </div>
         <div>
@@ -43,7 +43,15 @@
                             <th><fmt:formatNumber groupingUsed="true" value="${s.totalAngsuran}" type="currency"/></th>
                             <th><fmt:formatNumber groupingUsed="true" value="${s.baki}" type="currency"/></th>
                         </tr>                        
-                    </c:forEach>                    
+                    </c:forEach>  
+                    <tr>
+                        <th>Total</th>
+                        <th>&nbsp;</th>
+                        <th><fmt:formatNumber groupingUsed="true" value="${grantTotalAngsuranPokok}" type="currency"/></th>
+                        <th><fmt:formatNumber groupingUsed="true" value="${grantTotalAngsuranBunga}" type="currency"/></th>
+                        <th><fmt:formatNumber groupingUsed="true" value="${grantTotalAngsuran}" type="currency"/></th>
+                        <th>&nbsp;</th>
+                    </tr>
                 </tbody>
             </table>
 

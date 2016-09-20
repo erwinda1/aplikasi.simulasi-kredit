@@ -5,9 +5,6 @@
  */
 package com.hotmail.dimmaryanto.software.model;
 
-import java.time.DayOfWeek;
-import java.time.LocalDate;
-
 /**
  *
  * @author bpr_ukabima
@@ -22,8 +19,8 @@ public class BungaJenisFlat extends KreditDetail {
         super.setJatuhTempo(angsuranKe);
         setAngsuranPokok(plafond, jangka);
         setAngsuranBunga(plafond, bunga);
-        setTotalAngsuran();
-        setBaki();
+        setTotalAngsuran(getAngsuranPokok() + getAngsuranBunga());
+        setBaki(plafond - (getAngsuranPokok() * getAngsuranKe()));
     }
 
     public void setAngsuranPokok(Double plafond, Integer jangka) {
@@ -31,15 +28,7 @@ public class BungaJenisFlat extends KreditDetail {
     }
 
     public void setAngsuranBunga(Double plafond, Double bunga) {
-        super.setAngsuranBunga((plafond * bunga) / 12);
-    }
-
-    public void setTotalAngsuran() {
-        super.setTotalAngsuran(getAngsuranPokok() + getAngsuranBunga());
-    }
-
-    public void setBaki() {
-        super.setBaki(plafond - (getAngsuranPokok() * getAngsuranKe()));
+        super.setAngsuranBunga((plafond * bunga) / 1200);
     }
 
 }
