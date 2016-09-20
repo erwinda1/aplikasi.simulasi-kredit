@@ -7,18 +7,17 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>Simulator Bunga Jenis Flat</title>
     </head>
     <body>
         <div>
             <div>
-                Plafond: <fmt:formatNumber groupingUsed="true" value="${simulatorFlat.plafond}" type="currency"/>
+                Plafond: <fmt:formatNumber groupingUsed="true" value="${kredit.plafond}" type="currency"/>
             </div>
             <div>
-                Bunga: ${simulatorFlat.bunga}
+                Bunga: ${kredit.bunga}
             </div>
             <div>
-                Jangka: ${simulatorFlat.jangka} / Bulan
+                Jangka: ${kredit.jangka} / Bulan
             </div>
         </div>
         <div>
@@ -34,7 +33,7 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <c:forEach items="${simulatorFlat.simulasi}" var="s">
+                    <c:forEach items="${kredit.simulasi}" var="s">
                         <tr>
                             <th>${s.angsuranKe}</th>
                             <th>${s.jatuhTempo}</th>

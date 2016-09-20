@@ -23,13 +23,11 @@ public class BungaJenisAnuitas extends KreditDetail {
     }
 
     public void setTotalAngsuran(Double bunga, Integer jangka, Double plafond) {
-        Long value = Math.round(Finance.pmt(0.2 / 12, jangka, -plafond));
-        super.setTotalAngsuran(Double.valueOf(value));
+        super.setTotalAngsuran(Finance.pmt(0.2 / 12, jangka, -plafond));
     }
 
     public void setAngsuranBunga(Double bunga, Integer jangka, Double baki) {
-        Long value = Math.round(Finance.ipmt(bunga / 12, 1, jangka, -baki));
-        super.setAngsuranBunga(Double.valueOf(value));
+        super.setAngsuranBunga(Finance.ipmt(bunga / 12, 1, jangka, -baki));
     }
 
 }
