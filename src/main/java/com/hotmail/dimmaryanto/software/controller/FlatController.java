@@ -5,8 +5,9 @@
  */
 package com.hotmail.dimmaryanto.software.controller;
 
-import com.hotmail.dimmaryanto.software.model.FlatMaster;
-import com.hotmail.dimmaryanto.software.model.FlatTransaksi;
+import com.hotmail.dimmaryanto.software.model.BungaJenisFlat;
+import com.hotmail.dimmaryanto.software.model.Kredit;
+import com.hotmail.dimmaryanto.software.model.KreditDetail;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -20,16 +21,18 @@ public class FlatController {
 
     @GetMapping("/form")
     public void form(Model m) {
-        m.addAttribute("flat", new FlatMaster());
+        m.addAttribute("flat", new Kredit());
     }
 
     @PostMapping("/result")
-    public void proses(Model m, @ModelAttribute FlatMaster f) {
+    public void proses(Model m, @ModelAttribute Kredit f) {
         f.getSimulasi().clear();
-        
+
         for (Integer i = 1; i <= f.getJangka(); i++) {
-            FlatTransaksi t = new FlatTransaksi(i, f.getPlafond(), f.getJangka(), f.getBunga());
-            f.getSimulasi().add(t);
+            BungaJenisFlat ft = new BungaJenisFlat(i, f.getPlafond(), f.getJangka(), f.getBunga());
+            f.getSimulasi().add(ft);
+            //KreditDetail t = new KreditDetail(i, f.getPlafond(), f.getJangka(), f.getBunga());
+            //f.getSimulasi().add(t);
         }
         m.addAttribute("simulatorFlat", f);
     }

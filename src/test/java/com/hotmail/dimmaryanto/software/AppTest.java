@@ -1,38 +1,18 @@
 package com.hotmail.dimmaryanto.software;
 
-import junit.framework.Test;
 import junit.framework.TestCase;
-import junit.framework.TestSuite;
+import org.apache.poi.ss.formula.functions.Finance;
+import org.junit.Test;
 
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-    extends TestCase
-{
-    /**
-     * Create the test case
-     *
-     * @param testName name of the test case
-     */
-    public AppTest( String testName )
-    {
-        super( testName );
-    }
+public class AppTest extends TestCase {
 
-    /**
-     * @return the suite of tests being tested
-     */
-    public static Test suite()
-    {
-        return new TestSuite( AppTest.class );
-    }
-
-    /**
-     * Rigourous Test :-)
-     */
-    public void testApp()
-    {
-        assertTrue( true );
+    @Test
+    public void testPMT() {
+        Double pmt = Finance.pmt(0.2 / 12, 12, -20000000);
+        Double pmtConvert = Double.valueOf(Math.round(pmt));
+        assertEquals(1852690.0, pmtConvert);
     }
 }

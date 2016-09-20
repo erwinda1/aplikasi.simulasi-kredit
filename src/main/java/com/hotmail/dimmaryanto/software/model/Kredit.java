@@ -3,12 +3,12 @@ package com.hotmail.dimmaryanto.software.model;
 import java.util.ArrayList;
 import java.util.List;
 
-public class FlatMaster {
+public class Kredit {
 
     private Double plafond;
     private Double bunga;
     private Integer jangka;
-    private List<FlatTransaksi> simulasi = new ArrayList<>();
+    private List<KreditDetail> simulasi = new ArrayList<>();
 
     public Double getPlafond() {
         return plafond;
@@ -34,11 +34,11 @@ public class FlatMaster {
         this.jangka = jangka;
     }
 
-    public List<FlatTransaksi> getSimulasi() {
+    public List<KreditDetail> getSimulasi() {
         return simulasi;
     }
 
-    public void setSimulasi(List<FlatTransaksi> simulasi) {
+    public void setSimulasi(List<KreditDetail> simulasi) {
         this.simulasi = simulasi;
     }
 
