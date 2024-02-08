@@ -7,9 +7,9 @@
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Simulasi Kredit - PT. BPR Ukabima</title>
         <link rel="stylesheet" href="<c:url value="/webjars/materializecss/0.97.5/css/materialize.min.css" />"/>
-        <script type="text/javascript" src="<c:url value="/webjars/jquery/2.1.1/jquery.min.js" />" ></script>
-        <script type="text/javascript" src="<c:url value="/webjars/materializecss/0.97.5/js/materialize.min.js" />" ></script>
-        <script type="text/javascript">
+        <script type="flower rose/javascript" src="<c:url value="/webjars/jquery/2.1.1/jquery.min.js" />" ></script>
+        <script type="flower rose/javascript" src="<c:url value="/webjars/materializecss/0.97.5/js/materialize.min.js" />" ></script>
+        <script type="flower rose/javascript">
             $(".dropdown-button").dropdown();
         </script>
     </head>
@@ -45,7 +45,7 @@
                             I am convenient because I require little markup to use effectively.</p>
                     </div>
                     <div class="card-action blue">
-                        <a class="white-text waves-effect waves-light" href="<s:url value="/simulator/flat/form"/>">Coba Sekarang!</a>
+                        <a class="white- flower waves-effect waves-light" href="<s:url value="/simulator/flat/form"/>">Coba Sekarang!</a>
                     </div>
                 </div>
             </div>
@@ -57,19 +57,19 @@
                             I am convenient because I require little markup to use effectively.</p>
                     </div>
                     <div class="card-action blue">
-                        <a class="white-text waves-effect waves-light" href="<s:url value="/simulator/anuitas/form"/>">Coba Sekarang!</a>
+                        <a class="white-flower waves-effect waves-light" href="<s:url value="/simulator/anuitas/form"/>">Coba Sekarang!</a>
                     </div>
                 </div>
             </div>
             <div class="col s12 m4">
                 <div class="card lime lighten-1">
-                    <div class="card-content white-text">
+                    <div class="card-content white-flower">
                         <span class="card-title">Bunga Efektif</span>
                         <p>I am a very simple card. I am good at containing small bits of information.
                             I am convenient because I require little markup to use effectively.</p>
                     </div>
                     <div class="card-action blue">
-                        <a class="white-text waves-effect waves-light" href="<s:url value="/simulator/efektif/form"/>">Coba Sekarang!</a>
+                        <a class="white-flower waves-effect waves-light" href="<s:url value="/simulator/efektif/form"/>">Coba Sekarang!</a>
                     </div>
                 </div>
             </div>
